@@ -15,7 +15,7 @@ export const translations = {
     hero: {
       headline: "Junior Developer with a security mindset.",
       subheadline:
-        "I build modern web experiences, practical automations, and AI-powered solutions for real businesses.",
+        "I specialize in developing scalable web applications, intelligent automation systems, and AI-driven solutions that deliver measurable business value.",
       location: "Currently based in Sint-Niklaas, Belgium",
       proofBullets: [
         "Higher Technical Degree in Software Development (DAM)",
@@ -246,7 +246,7 @@ export const translations = {
     hero: {
       headline: "Desarrollador Junior con mentalidad de seguridad.",
       subheadline:
-        "Creo experiencias web modernas, automatizaciones prácticas y soluciones con IA para negocios reales.",
+        "Me especializo en desarrollar aplicaciones web escalables, sistemas de automatización inteligentes y soluciones impulsadas por IA que generan valor empresarial medible.",
       location: "Actualmente en Sint-Niklaas, Bélgica",
       proofBullets: [
         "Grado Superior en Desarrollo de Software (DAM)",
@@ -479,7 +479,7 @@ export const translations = {
     hero: {
       headline: "Junior Developer met een security mindset.",
       subheadline:
-        "Ik bouw moderne webapplicaties, praktische automatiseringen en AI-gedreven oplossingen voor echte bedrijven.",
+        "Ik ben gespecialiseerd in het ontwikkelen van schaalbare webapplicaties, intelligente automatiseringssystemen en AI-gestuurde oplossingen die meetbare bedrijfswaarde leveren.",
       location: "Momenteel gevestigd in Sint-Niklaas, België",
       proofBullets: [
         "Hogere Technische Graad in Softwareontwikkeling (DAM)",
