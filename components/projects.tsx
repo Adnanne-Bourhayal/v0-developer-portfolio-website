@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { ExternalLink, Github, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 type Project = {
   id: string
@@ -103,8 +104,8 @@ export function Projects() {
                     >
                       {project.status}
                     </Badge>
-                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                      <span className="text-sm text-muted-foreground px-4 text-center">{project.name}</span>
+                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
+                      <Image src={`/projects/${project.id}.svg`} alt={project.name} fill className="object-cover" />
                     </div>
                   </div>
 
@@ -137,13 +138,7 @@ export function Projects() {
                   <div className="flex flex-col gap-2 mt-auto">
                     <div className="flex gap-2">
                       {project.liveUrl && (
-                        <Button
-                          variant="default"
-                          size="sm"
-                          className="flex-1 gap-2"
-                          asChild={!!project.liveUrl}
-                          disabled={!project.liveUrl}
-                        >
+                        <Button variant="default" size="sm" className="flex-1 gap-2" asChild>
                           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="h-4 w-4" />
                             {t.projects.liveDemo}
@@ -151,17 +146,16 @@ export function Projects() {
                         </Button>
                       )}
                       {project.githubUrl && (
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="flex-1 gap-2 bg-transparent"
-                          asChild={!!project.githubUrl}
-                          disabled={!project.githubUrl}
-                        >
+                        <Button variant="outline" size="sm" className="flex-1 gap-2 bg-transparent" asChild>
                           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4" />
                             {t.projects.github}
                           </a>
+                        </Button>
+                      )}
+                      {!project.liveUrl && !project.githubUrl && (
+                        <Button variant="secondary" size="sm" className="flex-1" disabled>
+                          Coming Soon
                         </Button>
                       )}
                     </div>
@@ -197,8 +191,13 @@ export function Projects() {
               </DialogHeader>
 
               <div className="space-y-6 py-4">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">{selectedProject.name} Screenshot</span>
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <Image
+                    src={`/projects/${selectedProject.id}.svg`}
+                    alt={selectedProject.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 <div>

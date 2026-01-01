@@ -83,13 +83,16 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Theme Toggle */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  {theme === "light" && <Sun className="h-5 w-5" />}
-                  {theme === "dark" && <Moon className="h-5 w-5" />}
-                  {theme === "system" && <Monitor className="h-5 w-5" />}
+                  {theme === "light" ? (
+                    <Sun className="h-5 w-5" />
+                  ) : theme === "dark" ? (
+                    <Moon className="h-5 w-5" />
+                  ) : (
+                    <Monitor className="h-5 w-5" />
+                  )}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -108,10 +111,11 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Download CV */}
-            <Button size="sm" className="hidden sm:flex gap-2">
-              <Download className="h-4 w-4" />
-              {t.nav.downloadCV}
+            <Button size="sm" className="hidden sm:flex gap-2" asChild>
+              <a href="/CV_Adnan.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="h-4 w-4" />
+                {t.nav.downloadCV}
+              </a>
             </Button>
 
             {/* Mobile Menu Toggle */}
@@ -139,9 +143,11 @@ export function Navbar() {
               </button>
             ))}
             <div className="px-4 pt-2">
-              <Button size="sm" className="w-full gap-2">
-                <Download className="h-4 w-4" />
-                {t.nav.downloadCV}
+              <Button size="sm" className="w-full gap-2" asChild>
+                <a href="/CV_Adnan.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="h-4 w-4" />
+                  {t.nav.downloadCV}
+                </a>
               </Button>
             </div>
           </div>

@@ -1,9 +1,5 @@
 export type Language = "en" | "es" | "nl"
 
-export function getTranslation(lang: Language) {
-  return translations[lang]
-}
-
 export const translations = {
   en: {
     nav: {
@@ -701,4 +697,8 @@ export const translations = {
       rights: "Alle rechten voorbehouden.",
     },
   },
+}
+
+export function getTranslation(lang: Language) {
+  return translations[lang]
 }
