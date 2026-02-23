@@ -107,22 +107,22 @@ export const translations = {
       project3: {
         name: "Import Your Dream",
         tagline: "Vehicle Import/Export",
-        status: "In Progress",
-        description: "Landing + quote workflow concept for vehicle import/export services (Spain-focused).",
+        status: "Live",
+        description: "Full-service platform for vehicle import/export between Belgium and Spain with quote workflows and lead capture.",
         problem:
           "Vehicle import process is complex and customers need clear information and easy quote requests to make informed decisions.",
         solution:
-          "Designing a streamlined landing page with lead capture, multi-step quote request system, and SEO-friendly content structure.",
+          "Built a streamlined landing page with lead capture, multi-step quote request system, and SEO-friendly content structure to guide customers through the import process.",
         outcome:
-          "Planned to simplify the vehicle import/export process with future automation for confirmations and CRM sync.",
+          "Live platform simplifying the vehicle import/export process with clear service presentation and frictionless quote requests.",
         highlights: [
-          "Quote request form concept",
-          "SEO-friendly structure planned",
-          "Future automation: confirmations + CRM sync",
+          "Multi-step quote request form",
+          "SEO-friendly content structure",
+          "Lead capture & contact flow",
         ],
-        tech: ["Next.js", "TypeScript", "Tailwind", "Automation (Planned)"],
+        tech: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
         liveUrl: "https://import-your-dream-website.vercel.app",
-        githubUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Import-Your-Dream",
       },
     },
     skills: {
@@ -339,23 +339,23 @@ export const translations = {
       project3: {
         name: "Import Your Dream",
         tagline: "Importación/Exportación de Vehículos",
-        status: "En Progreso",
+        status: "En Vivo",
         description:
-          "Landing + concepto de flujo de cotización para servicios de importación/exportación de vehículos (enfoque España).",
+          "Plataforma completa para importación/exportación de vehículos entre Bélgica y España con flujos de cotización y captura de leads.",
         problem:
           "El proceso de importación de vehículos es complejo y los clientes necesitan información clara y solicitudes de cotización fáciles para tomar decisiones informadas.",
         solution:
-          "Diseñando una landing optimizada con captura de leads, sistema de solicitud de cotización multipaso y estructura de contenido SEO-friendly.",
+          "Construí una landing optimizada con captura de leads, sistema de solicitud de cotización multipaso y estructura de contenido SEO-friendly para guiar a los clientes en el proceso de importación.",
         outcome:
-          "Planificado para simplificar el proceso de importación/exportación de vehículos con automatización futura para confirmaciones y sincronización CRM.",
+          "Plataforma en producción que simplifica el proceso de importación/exportación de vehículos con presentación clara de servicios y solicitudes de cotización sin fricción.",
         highlights: [
-          "Concepto de formulario de solicitud de cotización",
-          "Estructura SEO-friendly planificada",
-          "Automatización futura: confirmaciones + sincronización CRM",
+          "Formulario de solicitud de cotización multipaso",
+          "Estructura de contenido SEO-friendly",
+          "Captura de leads y flujo de contacto",
         ],
-        tech: ["Next.js", "TypeScript", "Tailwind", "Automatización (Planificada)"],
+        tech: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
         liveUrl: "https://import-your-dream-website.vercel.app",
-        githubUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Import-Your-Dream",
       },
     },
     skills: {
@@ -572,22 +572,22 @@ export const translations = {
       project3: {
         name: "Import Your Dream",
         tagline: "Voertuig Import/Export",
-        status: "In Uitvoering",
-        description: "Landing + offerteflow concept voor voertuig import/export diensten (Spanje-gericht).",
+        status: "Live",
+        description: "Volledig platform voor voertuig import/export tussen België en Spanje met offerteflows en lead capture.",
         problem:
           "Voertuig importproces is complex en klanten hebben duidelijke informatie en eenvoudige offerte-aanvragen nodig om geïnformeerde beslissingen te nemen.",
         solution:
-          "Ontwerpen van een gestroomlijnde landingspagina met lead capture, multi-step offerte-aanvraag systeem en SEO-vriendelijke contentstructuur.",
+          "Bouwde een gestroomlijnde landingspagina met lead capture, multi-step offerte-aanvraag systeem en SEO-vriendelijke contentstructuur om klanten door het importproces te begeleiden.",
         outcome:
-          "Gepland om het voertuig import/export proces te vereenvoudigen met toekomstige automatisering voor bevestigingen en CRM sync.",
+          "Live platform dat het voertuig import/export proces vereenvoudigt met duidelijke servicepresentatie en wrijvingsloze offerte-aanvragen.",
         highlights: [
-          "Offerte-aanvraag formulier concept",
-          "SEO-vriendelijke structuur gepland",
-          "Toekomstige automatisering: bevestigingen + CRM sync",
+          "Multi-step offerte-aanvraag formulier",
+          "SEO-vriendelijke contentstructuur",
+          "Lead capture & contactflow",
         ],
-        tech: ["Next.js", "TypeScript", "Tailwind", "Automatisering (Gepland)"],
+        tech: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
         liveUrl: "https://import-your-dream-website.vercel.app",
-        githubUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Import-Your-Dream",
       },
     },
     skills: {
