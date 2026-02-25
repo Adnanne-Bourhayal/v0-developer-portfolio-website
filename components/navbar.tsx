@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Moon, Sun, Monitor, Download, Menu, X } from "lucide-react"
+import { Moon, Sun, Monitor, Menu, X } from "lucide-react"
 import { useTheme } from "./theme-provider"
 import { useLanguage } from "@/lib/language-context"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
@@ -111,13 +111,6 @@ export function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button size="sm" className="hidden sm:flex gap-2" asChild>
-              <a href="/CV_Adnan.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="h-4 w-4" />
-                {t.nav.downloadCV}
-              </a>
-            </Button>
-
             {/* Mobile Menu Toggle */}
             <Button
               variant="ghost"
@@ -142,14 +135,7 @@ export function Navbar() {
                 {link.label}
               </button>
             ))}
-            <div className="px-4 pt-2">
-              <Button size="sm" className="w-full gap-2" asChild>
-                <a href="/CV_Adnan.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="h-4 w-4" />
-                  {t.nav.downloadCV}
-                </a>
-              </Button>
-            </div>
+
           </div>
         )}
       </div>

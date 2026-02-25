@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, Linkedin, Github, ExternalLink } from "lucide-react"
+import { Mail, Linkedin, Github, ExternalLink } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { motion } from "framer-motion"
 
@@ -40,7 +40,6 @@ export function Contact() {
       href: "mailto:adnanneabattah000@gmail.com",
       text: "adnanneabattah000@gmail.com",
     },
-    { icon: Phone, label: "Phone", href: "tel:+32471557260", text: "+32 471 55 72 60" },
     {
       icon: Linkedin,
       label: "LinkedIn",
