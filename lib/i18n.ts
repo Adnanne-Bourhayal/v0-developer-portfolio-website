@@ -98,7 +98,7 @@ export const translations = {
           "Built for conversion and fast UX",
         ],
         tech: ["Next.js", "React", "Tailwind", "Vercel"],
-        liveUrl: "https://novadetail.vercel.app/",
+        liveUrl: "https://nvdetail.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Nova-Detailing",
       },
       project3: {
@@ -327,7 +327,7 @@ export const translations = {
           "Construido para conversion y UX rapida",
         ],
         tech: ["Next.js", "React", "Tailwind", "Vercel"],
-        liveUrl: "https://novadetail.vercel.app/",
+        liveUrl: "https://nvdetail.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Nova-Detailing",
       },
       project3: {
@@ -560,7 +560,7 @@ export const translations = {
           "Vertrouwenselementen: FAQ, servicegebied, voor/na placeholders",
         ],
         tech: ["Next.js", "React", "Tailwind", "Vercel"],
-        liveUrl: "https://novadetail.vercel.app/",
+        liveUrl: "https://nvdetail.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Nova-Detailing",
       },
       project3: {
