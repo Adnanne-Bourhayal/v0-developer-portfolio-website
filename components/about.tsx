@@ -71,7 +71,7 @@ export function About() {
           >
             <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8">{t.about.whatIDoTitle}</h3>
             <div className="grid md:grid-cols-3 gap-6">
-              {t.about.whatIDo.map((item: { title: string; items: string[] }, index: number) => {
+              {t.about.whatIDo.map((item: { title: string; items: string[] | string; description?: string }, index: number) => {
                 const Icon = whatIDoIcons[index]
                 return (
                   <motion.div
@@ -86,14 +86,20 @@ export function About() {
                         <Icon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                       </div>
                       <h4 className="text-lg font-semibold mb-3">{item.title}</h4>
-                      <ul className="space-y-2">
-                        {item.items.map((detail: string, i: number) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                            <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
-                            <span className="leading-relaxed">{detail}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      {item.description ? (
+                        <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                      ) : Array.isArray(item.items) ? (
+                        <ul className="space-y-2">
+                          {item.items.map((detail: string, i: number) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                              <span className="leading-relaxed">{detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-sm text-muted-foreground leading-relaxed">{item.items}</p>
+                      )}
                     </Card>
                   </motion.div>
                 )

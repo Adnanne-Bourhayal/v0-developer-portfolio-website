@@ -23,6 +23,7 @@ type Project = {
   tech: string[]
   liveUrl?: string
   githubUrl?: string
+  image: string
 }
 
 export function Projects() {
@@ -43,6 +44,7 @@ export function Projects() {
       tech: t.projects.project1.tech,
       liveUrl: t.projects.project1.liveUrl,
       githubUrl: t.projects.project1.githubUrl,
+      image: "/projects/altaira.jpg",
     },
     {
       id: "nova",
@@ -57,6 +59,7 @@ export function Projects() {
       tech: t.projects.project2.tech,
       liveUrl: t.projects.project2.liveUrl,
       githubUrl: t.projects.project2.githubUrl,
+      image: "/projects/nova.jpg",
     },
     {
       id: "import",
@@ -71,6 +74,7 @@ export function Projects() {
       tech: t.projects.project3.tech,
       liveUrl: t.projects.project3.liveUrl,
       githubUrl: t.projects.project3.githubUrl,
+      image: "/projects/import.jpg",
     },
   ]
 
@@ -104,8 +108,8 @@ export function Projects() {
                     >
                       {project.status}
                     </Badge>
-                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
-                      <Image src={`/projects/${project.id}.svg`} alt={project.name} fill className="object-cover" />
+                    <div className="aspect-video rounded-lg mb-4 overflow-hidden relative">
+                      <Image src={project.image} alt={project.name} fill className="object-cover" />
                     </div>
                   </div>
 
@@ -191,9 +195,9 @@ export function Projects() {
               </DialogHeader>
 
               <div className="space-y-6 py-4">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="aspect-video rounded-lg relative overflow-hidden">
                   <Image
-                    src={`/projects/${selectedProject.id}.svg`}
+                    src={selectedProject.image}
                     alt={selectedProject.name}
                     fill
                     className="object-cover"
