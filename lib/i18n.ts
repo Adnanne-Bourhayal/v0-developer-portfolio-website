@@ -82,6 +82,26 @@ export const translations = {
         liveUrl: undefined,
         githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
       },
+      projectFinflow: {
+        name: "FinFlow",
+        tagline: "Financial Operations Platform",
+        status: "Live",
+        description: "Full-stack financial tracking and analytics platform with real-time insights and API-driven architecture.",
+        problem:
+          "Growing businesses need a unified platform to track budgets, manage transactions, and monitor financial performance in real-time.",
+        solution:
+          "Built a modern financial operations platform with budget tracking, transaction management, and performance analytics using a FastAPI backend.",
+        outcome:
+          "Live platform enabling teams to control budgets, review performance, and build structured financial workflows.",
+        highlights: [
+          "Real-time budget tracking and analytics",
+          "Transaction management dashboard",
+          "API-driven architecture with FastAPI",
+        ],
+        tech: ["Next.js", "FastAPI", "PostgreSQL", "Vercel"],
+        liveUrl: "https://finflowbeta.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/finflow-frontend",
+      },
       project1: {
         name: "Altaira Labs",
         tagline: "AI & Automation Solutions Agency",
@@ -330,6 +350,26 @@ export const translations = {
         tech: ["Kotlin", "FastAPI", "Android", "Security"],
         liveUrl: undefined,
         githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
+      },
+      projectFinflow: {
+        name: "FinFlow",
+        tagline: "Plataforma de Operaciones Financieras",
+        status: "En Vivo",
+        description: "Plataforma full-stack de seguimiento y analisis financiero con insights en tiempo real y arquitectura API.",
+        problem:
+          "Las empresas en crecimiento necesitan una plataforma unificada para rastrear presupuestos, gestionar transacciones y monitorear el rendimiento financiero.",
+        solution:
+          "Construi una plataforma moderna de operaciones financieras con seguimiento de presupuestos, gestion de transacciones y analisis de rendimiento usando FastAPI.",
+        outcome:
+          "Plataforma en produccion que permite a los equipos controlar presupuestos, revisar rendimiento y construir flujos financieros estructurados.",
+        highlights: [
+          "Seguimiento de presupuestos y analisis en tiempo real",
+          "Dashboard de gestion de transacciones",
+          "Arquitectura API con FastAPI",
+        ],
+        tech: ["Next.js", "FastAPI", "PostgreSQL", "Vercel"],
+        liveUrl: "https://finflowbeta.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/finflow-frontend",
       },
       project1: {
         name: "Altaira Labs",
@@ -584,6 +624,26 @@ export const translations = {
         tech: ["Kotlin", "FastAPI", "Android", "Security"],
         liveUrl: undefined,
         githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
+      },
+      projectFinflow: {
+        name: "FinFlow",
+        tagline: "Financieel Operatieplatform",
+        status: "Live",
+        description: "Full-stack financieel tracking en analytics platform met realtime inzichten en API-gedreven architectuur.",
+        problem:
+          "Groeiende bedrijven hebben een uniform platform nodig om budgetten te volgen, transacties te beheren en financiele prestaties in realtime te monitoren.",
+        solution:
+          "Bouwde een modern financieel operatieplatform met budgettracking, transactiebeheer en prestatie-analytics met een FastAPI backend.",
+        outcome:
+          "Live platform waarmee teams budgetten kunnen controleren, prestaties kunnen beoordelen en gestructureerde financiele workflows kunnen bouwen.",
+        highlights: [
+          "Realtime budgettracking en analytics",
+          "Transactiebeheer dashboard",
+          "API-gedreven architectuur met FastAPI",
+        ],
+        tech: ["Next.js", "FastAPI", "PostgreSQL", "Vercel"],
+        liveUrl: "https://finflowbeta.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/finflow-frontend",
       },
       project1: {
         name: "Altaira Labs",
