@@ -1,0 +1,23 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad2)"/>
+  <!-- Car silhouette -->
+  <ellipse cx="400" cy="320" rx="180" ry="40" fill="#0ea5e9" opacity="0.3"/>
+  <path d="M 250 280 Q 250 240 280 220 L 350 220 L 370 200 L 430 200 L 450 220 L 520 220 Q 550 240 550 280 L 550 300 Q 550 310 540 310 L 260 310 Q 250 310 250 300 Z" fill="#0ea5e9" opacity="0.6"/>
+  <ellipse cx="310" cy="310" rx="25" ry="25" fill="#1e293b" opacity="0.8"/>
+  <ellipse cx="490" cy="310" rx="25" ry="25" fill="#1e293b" opacity="0.8"/>
+  <!-- Sparkles for detailing -->
+  <circle cx="320" cy="250" r="4" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="380" cy="230" r="3" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="420" cy="230" r="3" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="480" cy="250" r="4" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="350" cy="270" r="2" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="450" cy="270" r="2" fill="#fbbf24" opacity="0.8"/>
+  <path d="M 320 250 l 3 -8 l 3 8 l 8 3 l -8 3 l -3 8 l -3 -8 l -8 -3 Z" fill="#fbbf24" opacity="0.6"/>
+  <path d="M 480 250 l 3 -8 l 3 8 l 8 3 l -8 3 l -3 8 l -3 -8 l -8 -3 Z" fill="#fbbf24" opacity="0.6"/>
+</svg>
