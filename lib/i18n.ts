@@ -61,6 +61,27 @@ export const translations = {
       outcome: "Outcome",
       techStack: "Tech Stack",
       keyFeatures: "Key Features",
+      featured: "Featured",
+      project0: {
+        name: "CorpWallet",
+        tagline: "Enterprise Transaction Security",
+        status: "Demo",
+        description: "Secure enterprise transaction approval system with runtime trust evaluation.",
+        problem:
+          "Enterprise finance teams need secure, verifiable transaction approval workflows that can detect compromised devices.",
+        solution:
+          "Built a mobile-first POC with runtime integrity checks, risk scoring, and multi-layer approval policies.",
+        outcome:
+          "Demonstrates secure transaction control for enterprise finance with real-time trust verification.",
+        highlights: [
+          "Runtime trust scoring (100 = verified secure)",
+          "Risk-based transaction flagging",
+          "Multi-layer approval policies",
+        ],
+        tech: ["Kotlin", "FastAPI", "Android", "Security"],
+        liveUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
+      },
       project1: {
         name: "Altaira Labs",
         tagline: "AI & Automation Solutions Agency",
@@ -78,7 +99,7 @@ export const translations = {
           "Automation-ready architecture",
         ],
         tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-        liveUrl: "https://v0-altaira-labs-homepage.vercel.app/",
+        liveUrl: "https://altairalabs.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Altaira-Labs",
       },
       project2: {
@@ -148,10 +169,10 @@ export const translations = {
     experience: {
       title: "Experience",
       job1: {
-        title: "Full Stack Developer (Academic)",
+        title: "Full Stack Developer",
         company: "UDIT",
         location: "Madrid, Spain",
-        period: "Oct 2023 – Jun 2024",
+        period: "Oct 2024 – Jun 2025",
         highlights: [
           "Built a university booking portal (ASP.NET, SQL, Bootstrap) to manage resources and prevent scheduling conflicts.",
           "Improved delivery speed with structured workflows and automated checks.",
@@ -289,6 +310,27 @@ export const translations = {
       outcome: "Resultado",
       techStack: "Stack Tecnológico",
       keyFeatures: "Características Clave",
+      featured: "Destacado",
+      project0: {
+        name: "CorpWallet",
+        tagline: "Seguridad de Transacciones Empresariales",
+        status: "Demo",
+        description: "Sistema seguro de aprobacion de transacciones empresariales con evaluacion de confianza en tiempo real.",
+        problem:
+          "Los equipos de finanzas empresariales necesitan flujos de aprobacion de transacciones seguros y verificables.",
+        solution:
+          "Construi un POC mobile-first con verificaciones de integridad en tiempo real, puntuacion de riesgo y politicas de aprobacion multicapa.",
+        outcome:
+          "Demuestra control seguro de transacciones para finanzas empresariales con verificacion de confianza en tiempo real.",
+        highlights: [
+          "Puntuacion de confianza en tiempo real (100 = seguro verificado)",
+          "Marcado de transacciones basado en riesgo",
+          "Politicas de aprobacion multicapa",
+        ],
+        tech: ["Kotlin", "FastAPI", "Android", "Security"],
+        liveUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
+      },
       project1: {
         name: "Altaira Labs",
         tagline: "Agencia de Soluciones de IA y Automatizacion",
@@ -307,7 +349,7 @@ export const translations = {
           "Arquitectura lista para automatizacion",
         ],
         tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-        liveUrl: "https://v0-altaira-labs-homepage.vercel.app/",
+        liveUrl: "https://altairalabs.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Altaira-Labs",
       },
       project2: {
@@ -378,10 +420,10 @@ export const translations = {
     experience: {
       title: "Experiencia",
       job1: {
-        title: "Desarrollador Full Stack (Academico)",
+        title: "Desarrollador Full Stack",
         company: "UDIT",
         location: "Madrid, Espana",
-        period: "Oct 2023 – Jun 2024",
+        period: "Oct 2024 – Jun 2025",
         highlights: [
           "Construi un portal de reservas universitario (ASP.NET, SQL, Bootstrap) para gestionar recursos y prevenir conflictos de horarios.",
           "Mejore la velocidad de entrega con flujos de trabajo estructurados y verificaciones automatizadas.",
@@ -522,6 +564,27 @@ export const translations = {
       outcome: "Resultaat",
       techStack: "Tech Stack",
       keyFeatures: "Belangrijkste Functies",
+      featured: "Uitgelicht",
+      project0: {
+        name: "CorpWallet",
+        tagline: "Enterprise Transactiebeveiliging",
+        status: "Demo",
+        description: "Veilig enterprise transactie-goedkeuringssysteem met runtime vertrouwensevaluatie.",
+        problem:
+          "Enterprise financeteams hebben veilige, verifieerbare transactie-goedkeuringsworkflows nodig.",
+        solution:
+          "Bouwde een mobile-first POC met runtime integriteitscontroles, risicoscoring en meerlaagse goedkeuringsbeleid.",
+        outcome:
+          "Demonstreert veilige transactiecontrole voor enterprise finance met realtime vertrouwensverificatie.",
+        highlights: [
+          "Runtime vertrouwensscore (100 = geverifieerd veilig)",
+          "Risico-gebaseerde transactiemarkering",
+          "Meerlaags goedkeuringsbeleid",
+        ],
+        tech: ["Kotlin", "FastAPI", "Android", "Security"],
+        liveUrl: undefined,
+        githubUrl: "https://github.com/Adnanne-Bourhayal/corpwallet-mobile-poc",
+      },
       project1: {
         name: "Altaira Labs",
         tagline: "AI & Automatisering Oplossingen Bureau",
@@ -539,8 +602,8 @@ export const translations = {
           "Lead capture & contactflow",
           "Schaalbare structuur voor toekomstige case studies en onboarding",
         ],
-        tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel", "Automatisering (Concept)"],
-        liveUrl: "https://v0-altaira-labs-homepage.vercel.app/",
+        tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
+        liveUrl: "https://altairalabs.vercel.app/",
         githubUrl: "https://github.com/Adnanne-Bourhayal/Altaira-Labs",
       },
       project2: {
@@ -608,10 +671,10 @@ export const translations = {
     experience: {
       title: "Ervaring",
       job1: {
-        title: "Full Stack Developer (Academisch)",
+        title: "Full Stack Developer",
         company: "UDIT",
         location: "Madrid, Spanje",
-        period: "Oct 2023 – Jun 2024",
+        period: "Oct 2024 – Jun 2025",
         highlights: [
           "Ontwikkelde universiteit resource/klaslokaal boekingsportaal om planningsconflicten te voorkomen en resources te beheren met ASP.NET, Bootstrap, SQL, Visual Studio en Git",
           "Stelde AI-ondersteunde workflows voor om iteratie te versnellen en kwaliteitscontroles tijdens ontwikkelingscycli te verbeteren",

@@ -32,6 +32,21 @@ export function Projects() {
 
   const projects: Project[] = [
     {
+      id: "corpwallet",
+      name: t.projects.project0.name,
+      tagline: t.projects.project0.tagline,
+      status: t.projects.project0.status,
+      description: t.projects.project0.description,
+      problem: t.projects.project0.problem,
+      solution: t.projects.project0.solution,
+      outcome: t.projects.project0.outcome,
+      highlights: t.projects.project0.highlights,
+      tech: t.projects.project0.tech,
+      liveUrl: t.projects.project0.liveUrl,
+      githubUrl: t.projects.project0.githubUrl,
+      image: "/images/projects/corpwallet.png",
+    },
+    {
       id: "altaira",
       name: t.projects.project1.name,
       tagline: t.projects.project1.tagline,
@@ -44,7 +59,7 @@ export function Projects() {
       tech: t.projects.project1.tech,
       liveUrl: t.projects.project1.liveUrl,
       githubUrl: t.projects.project1.githubUrl,
-      image: "/projects/altaira.jpg",
+      image: "/images/projects/altaira.png",
     },
     {
       id: "nova",
@@ -59,7 +74,7 @@ export function Projects() {
       tech: t.projects.project2.tech,
       liveUrl: t.projects.project2.liveUrl,
       githubUrl: t.projects.project2.githubUrl,
-      image: "/projects/nova.jpg",
+      image: "/images/projects/nova.png",
     },
     {
       id: "import",
@@ -74,7 +89,7 @@ export function Projects() {
       tech: t.projects.project3.tech,
       liveUrl: t.projects.project3.liveUrl,
       githubUrl: t.projects.project3.githubUrl,
-      image: "/projects/import.jpg",
+      image: "/images/projects/import.png",
     },
   ]
 
@@ -91,7 +106,7 @@ export function Projects() {
             {t.projects.title}
           </h2>
 
-          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -99,17 +114,24 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
+                className={index === 0 ? "lg:col-span-2" : ""}
               >
-                <Card className="p-6 h-full flex flex-col hover:shadow-xl transition-all hover:-translate-y-2 group">
+                <Card className={`p-6 h-full flex flex-col hover:shadow-xl transition-all hover:-translate-y-1 group border-border/50 bg-card/50 backdrop-blur-sm ${index === 0 ? "border-blue-500/30" : ""}`}>
                   <div className="mb-4">
-                    <Badge
-                      variant={project.status === t.projects.inProgress ? "secondary" : "default"}
-                      className="mb-3"
-                    >
-                      {project.status}
-                    </Badge>
-                    <div className="aspect-video rounded-lg mb-4 overflow-hidden relative">
-                      <Image src={project.image} alt={project.name} fill className="object-cover" />
+                    <div className="flex items-center gap-2 mb-3">
+                      <Badge
+                        variant={project.status === t.projects.inProgress ? "secondary" : "default"}
+                      >
+                        {project.status}
+                      </Badge>
+                      {index === 0 && (
+                        <Badge variant="outline" className="border-blue-500/50 text-blue-500">
+                          {t.projects.featured}
+                        </Badge>
+                      )}
+                    </div>
+                    <div className={`rounded-lg mb-4 overflow-hidden relative ${index === 0 ? "aspect-[21/9]" : "aspect-video"}`}>
+                      <Image src={project.image} alt={project.name} fill className="object-cover object-top" />
                     </div>
                   </div>
 
