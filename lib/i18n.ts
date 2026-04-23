@@ -62,6 +62,30 @@ export const translations = {
       techStack: "Tech Stack",
       keyFeatures: "Key Features",
       featured: "Featured",
+      projectSmartApi: {
+        name: "Smart API Monitor",
+        tagline: "AI-powered API Security & Risk Analysis Platform",
+        status: "Live",
+        description:
+          "Full-stack platform to simulate, detect, and analyze API security threats in real time using rule-based detection and AI-powered analysis.",
+        problem:
+          "Modern APIs are exposed to constant security threats, but many teams lack a simple way to simulate attacks and analyze risk in real time.",
+        solution:
+          "Built a full-stack platform that combines rule-based detection and AI-powered analysis to simulate suspicious requests, classify threats, and score API security risks instantly.",
+        outcome:
+          "Created a production-style security monitoring platform with a clean dashboard, attack simulation workflows, historical analysis, and deployable infrastructure across frontend, backend, AI service, and database.",
+        highlights: [
+          "Real-time API request analysis",
+          "Attack simulation workflows for SQLi, XSS, and Path Traversal",
+          "Risk scoring and threat classification",
+          "AI-assisted request analysis via FastAPI service",
+          "Dashboard metrics and history tracking",
+          "Deploy-ready multi-service architecture",
+        ],
+        tech: ["Next.js", "TypeScript", "Tailwind CSS", "Spring Boot", "PostgreSQL", "FastAPI", "Pydantic", "Vercel", "Render"],
+        liveUrl: "https://smart-api-monitor.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Smart-Api.git",
+      },
       project0: {
         name: "CorpWallet",
         tagline: "Enterprise Transaction Security",
@@ -331,6 +355,30 @@ export const translations = {
       techStack: "Stack Tecnológico",
       keyFeatures: "Características Clave",
       featured: "Destacado",
+      projectSmartApi: {
+        name: "Smart API Monitor",
+        tagline: "AI-powered API Security & Risk Analysis Platform",
+        status: "En Vivo",
+        description:
+          "Full-stack platform to simulate, detect, and analyze API security threats in real time using rule-based detection and AI-powered analysis.",
+        problem:
+          "Modern APIs are exposed to constant security threats, but many teams lack a simple way to simulate attacks and analyze risk in real time.",
+        solution:
+          "Built a full-stack platform that combines rule-based detection and AI-powered analysis to simulate suspicious requests, classify threats, and score API security risks instantly.",
+        outcome:
+          "Created a production-style security monitoring platform with a clean dashboard, attack simulation workflows, historical analysis, and deployable infrastructure across frontend, backend, AI service, and database.",
+        highlights: [
+          "Real-time API request analysis",
+          "Attack simulation workflows for SQLi, XSS, and Path Traversal",
+          "Risk scoring and threat classification",
+          "AI-assisted request analysis via FastAPI service",
+          "Dashboard metrics and history tracking",
+          "Deploy-ready multi-service architecture",
+        ],
+        tech: ["Next.js", "TypeScript", "Tailwind CSS", "Spring Boot", "PostgreSQL", "FastAPI", "Pydantic", "Vercel", "Render"],
+        liveUrl: "https://smart-api-monitor.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Smart-Api.git",
+      },
       project0: {
         name: "CorpWallet",
         tagline: "Seguridad de Transacciones Empresariales",
@@ -605,6 +653,30 @@ export const translations = {
       techStack: "Tech Stack",
       keyFeatures: "Belangrijkste Functies",
       featured: "Uitgelicht",
+      projectSmartApi: {
+        name: "Smart API Monitor",
+        tagline: "AI-powered API Security & Risk Analysis Platform",
+        status: "Live",
+        description:
+          "Full-stack platform to simulate, detect, and analyze API security threats in real time using rule-based detection and AI-powered analysis.",
+        problem:
+          "Modern APIs are exposed to constant security threats, but many teams lack a simple way to simulate attacks and analyze risk in real time.",
+        solution:
+          "Built a full-stack platform that combines rule-based detection and AI-powered analysis to simulate suspicious requests, classify threats, and score API security risks instantly.",
+        outcome:
+          "Created a production-style security monitoring platform with a clean dashboard, attack simulation workflows, historical analysis, and deployable infrastructure across frontend, backend, AI service, and database.",
+        highlights: [
+          "Real-time API request analysis",
+          "Attack simulation workflows for SQLi, XSS, and Path Traversal",
+          "Risk scoring and threat classification",
+          "AI-assisted request analysis via FastAPI service",
+          "Dashboard metrics and history tracking",
+          "Deploy-ready multi-service architecture",
+        ],
+        tech: ["Next.js", "TypeScript", "Tailwind CSS", "Spring Boot", "PostgreSQL", "FastAPI", "Pydantic", "Vercel", "Render"],
+        liveUrl: "https://smart-api-monitor.vercel.app/",
+        githubUrl: "https://github.com/Adnanne-Bourhayal/Smart-Api.git",
+      },
       project0: {
         name: "CorpWallet",
         tagline: "Enterprise Transactiebeveiliging",

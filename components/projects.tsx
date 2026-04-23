@@ -10,6 +10,17 @@ import { useLanguage } from "@/lib/language-context"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
+type ProjectMedia =
+  | {
+      type: "image"
+      src: string
+    }
+  | {
+      type: "video"
+      src: string
+      poster?: string
+    }
+
 type Project = {
   id: string
   name: string
@@ -23,7 +34,7 @@ type Project = {
   tech: string[]
   liveUrl?: string
   githubUrl?: string
-  image: string
+  media: ProjectMedia
 }
 
 export function Projects() {
@@ -31,6 +42,24 @@ export function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   const projects: Project[] = [
+    {
+      id: "smart-api-monitor",
+      name: t.projects.projectSmartApi.name,
+      tagline: t.projects.projectSmartApi.tagline,
+      status: t.projects.projectSmartApi.status,
+      description: t.projects.projectSmartApi.description,
+      problem: t.projects.projectSmartApi.problem,
+      solution: t.projects.projectSmartApi.solution,
+      outcome: t.projects.projectSmartApi.outcome,
+      highlights: t.projects.projectSmartApi.highlights,
+      tech: t.projects.projectSmartApi.tech,
+      liveUrl: t.projects.projectSmartApi.liveUrl,
+      githubUrl: t.projects.projectSmartApi.githubUrl,
+      media: {
+        type: "video",
+        src: "/media/projects/smart-api-monitor.mp4",
+      },
+    },
     {
       id: "corpwallet",
       name: t.projects.project0.name,
@@ -44,7 +73,10 @@ export function Projects() {
       tech: t.projects.project0.tech,
       liveUrl: t.projects.project0.liveUrl,
       githubUrl: t.projects.project0.githubUrl,
-      image: "/images/projects/corpwallet.png",
+      media: {
+        type: "image",
+        src: "/images/projects/corpwallet.png",
+      },
     },
     {
       id: "finflow",
@@ -59,7 +91,10 @@ export function Projects() {
       tech: t.projects.projectFinflow.tech,
       liveUrl: t.projects.projectFinflow.liveUrl,
       githubUrl: t.projects.projectFinflow.githubUrl,
-      image: "/images/projects/finflow.png",
+      media: {
+        type: "image",
+        src: "/images/projects/finflow.png",
+      },
     },
     {
       id: "altaira",
@@ -74,7 +109,10 @@ export function Projects() {
       tech: t.projects.project1.tech,
       liveUrl: t.projects.project1.liveUrl,
       githubUrl: t.projects.project1.githubUrl,
-      image: "/images/projects/altaira.png",
+      media: {
+        type: "image",
+        src: "/images/projects/altaira.png",
+      },
     },
     {
       id: "nova",
@@ -89,7 +127,10 @@ export function Projects() {
       tech: t.projects.project2.tech,
       liveUrl: t.projects.project2.liveUrl,
       githubUrl: t.projects.project2.githubUrl,
-      image: "/images/projects/nova.png",
+      media: {
+        type: "image",
+        src: "/images/projects/nova.png",
+      },
     },
     {
       id: "import",
@@ -104,7 +145,10 @@ export function Projects() {
       tech: t.projects.project3.tech,
       liveUrl: t.projects.project3.liveUrl,
       githubUrl: t.projects.project3.githubUrl,
-      image: "/images/projects/import.png",
+      media: {
+        type: "image",
+        src: "/images/projects/import.png",
+      },
     },
   ]
 
@@ -146,7 +190,7 @@ export function Projects() {
                       )}
                     </div>
                     <div className={`rounded-lg mb-4 overflow-hidden relative ${index === 0 ? "aspect-[21/9]" : "aspect-video"}`}>
-                      <Image src={project.image} alt={project.name} fill className="object-cover object-top" />
+                      <ProjectPreview project={project} priority={index === 0} />
                     </div>
                   </div>
 
@@ -233,12 +277,7 @@ export function Projects() {
 
               <div className="space-y-6 py-4">
                 <div className="aspect-video rounded-lg relative overflow-hidden">
-                  <Image
-                    src={selectedProject.image}
-                    alt={selectedProject.name}
-                    fill
-                    className="object-cover"
-                  />
+                  <ProjectPreview project={selectedProject} />
                 </div>
 
                 <div>
@@ -303,5 +342,33 @@ export function Projects() {
         </DialogContent>
       </Dialog>
     </section>
+  )
+}
+
+function ProjectPreview({ project, priority = false }: { project: Project; priority?: boolean }) {
+  if (project.media.type === "video") {
+    return (
+      <video
+        aria-label={`${project.name} preview`}
+        className="h-full w-full object-cover object-top"
+        src={project.media.src}
+        poster={project.media.poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+    )
+  }
+
+  return (
+    <Image
+      src={project.media.src}
+      alt={project.name}
+      fill
+      priority={priority}
+      className="object-cover object-top"
+    />
   )
 }
