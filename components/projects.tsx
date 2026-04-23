@@ -189,7 +189,7 @@ export function Projects() {
                         </Badge>
                       )}
                     </div>
-                    <div className={`rounded-lg mb-4 overflow-hidden relative ${index === 0 ? "aspect-[21/9]" : "aspect-video"}`}>
+                    <div className="rounded-lg mb-4 overflow-hidden relative aspect-video">
                       <ProjectPreview project={project} priority={index === 0} />
                     </div>
                   </div>
@@ -350,7 +350,7 @@ function ProjectPreview({ project, priority = false }: { project: Project; prior
     return (
       <video
         aria-label={`${project.name} preview`}
-        className="h-full w-full object-cover object-top"
+        className="h-full w-full bg-black object-contain"
         src={project.media.src}
         poster={project.media.poster}
         autoPlay
