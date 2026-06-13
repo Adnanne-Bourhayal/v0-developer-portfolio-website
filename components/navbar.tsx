@@ -4,14 +4,12 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Monitor, Menu, X } from "lucide-react"
 import { useTheme } from "./theme-provider"
-import { useLanguage } from "@/lib/language-context"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
-  const { language, setLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,13 +28,13 @@ export function Navbar() {
   }
 
   const navLinks = [
-    { id: "hero", label: t.nav.home },
-    { id: "about", label: t.nav.about },
-    { id: "projects", label: t.nav.projects },
-    { id: "skills", label: t.nav.skills },
-    { id: "experience", label: t.nav.experience },
-    { id: "education", label: t.nav.education },
-    { id: "contact", label: t.nav.contact },
+    { id: "about", label: "About Me" },
+    { id: "what-i-do", label: "What I Do" },
+    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Tech Stack" },
+    { id: "experience", label: "Experience" },
+    { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ]
 
   return (
@@ -55,7 +53,7 @@ export function Navbar() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -69,23 +67,9 @@ export function Navbar() {
 
           {/* Right Side Controls */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="text-xs sm:text-sm">
-                  {language.toUpperCase()}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setLanguage("en")}>English</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("es")}>Español</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("nl")}>Nederlands</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" aria-label="Select theme">
                   {theme === "light" ? (
                     <Sun className="h-5 w-5" />
                   ) : theme === "dark" ? (
@@ -117,6 +101,7 @@ export function Navbar() {
               size="icon"
               className="lg:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
