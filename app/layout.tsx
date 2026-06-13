@@ -10,26 +10,26 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 export const metadata: Metadata = {
-  title: "Adnan | Junior Developer Portfolio",
+  title: "Adnan | Graduate Solutions Engineer",
   description:
-    "Junior Developer with a security mindset. Building modern web experiences, practical automations, and AI-powered solutions for real businesses.",
-  keywords: ["developer", "portfolio", "web development", "automation", "AI", "security", "Belgium"],
+    "Graduate Solutions Engineer and backend-focused developer building Java systems, cloud solutions, APIs, and workflow automation.",
+  keywords: ["solutions engineer", "backend developer", "Java", "cloud", "automation", "APIs", "Belgium"],
   authors: [{ name: "Adnan" }],
   creator: "Adnan",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.com",
-    title: "Adnan | Junior Developer Portfolio",
+    url: "https://adnanport.vercel.app/",
+    title: "Adnan | Graduate Solutions Engineer",
     description:
-      "Junior Developer with a security mindset. Building modern web experiences, practical automations, and AI-powered solutions.",
+      "Backend and cloud-oriented developer focused on robust systems, integration, and workflow automation.",
     siteName: "Adnan Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adnan | Junior Developer Portfolio",
+    title: "Adnan | Graduate Solutions Engineer",
     description:
-      "Junior Developer with a security mindset. Building modern web experiences, practical automations, and AI-powered solutions.",
+      "Backend and cloud-oriented developer focused on robust systems, integration, and workflow automation.",
   },
   robots: {
     index: true,
